@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath 'com.android.tools.build:gradle:8.0.1'
     }
 }
 
@@ -22,10 +22,11 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
-
+    compileSdkVersion 33
+    namespace 'fr.g123k.deviceapps'
     defaultConfig {
         minSdkVersion 16
+        targetSdkVersion 33
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -34,6 +35,6 @@ android {
     }
 
     dependencies {
-        implementation 'androidx.annotation:annotation:1.2.0'
+        implementation 'androidx.annotation:annotation:1.6.0'
     }
 }
